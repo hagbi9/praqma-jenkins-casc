@@ -11,7 +11,7 @@ services:
       - jenkins_home_summit:/var/jenkins_home
       - ./casc_configs:/var/jenkins_conf
     secrets:
-      - ${{ secrets.GITHUB }}  #Github username with password as an example. Purpose here is to have a user with write-access for special cases. Like the git-publisher.
+      - github   #Github username with password as an example. Purpose here is to have a user with write-access for special cases. Like the git-publisher.
       - adminpw  #Initial adminstrator user password. Added for debugging purposes. Should be removed prior to go-live. 
 #      - agent_private_key #ssh private key for connecting ssh slaves
     environment:
