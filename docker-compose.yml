@@ -16,7 +16,7 @@ services:
 #      - agent_private_key #ssh private key for connecting ssh slaves
     environment:
       - CASC_JENKINS_CONFIG=/var/jenkins_conf
-# secrets: #Be careful with newlines in your secrets, make sure to remove them before running docker-compose up.
+secrets: #Be careful with newlines in your secrets, make sure to remove them before running docker-compose up.
 #  github:
 #    file: /var/praqma-jenkins-casc/secrets/github
   adminpw:
