@@ -34,7 +34,7 @@ credentials:
             scope:    GLOBAL
             id:       github-user
             username: hagbi9
-            password: ${github:-githubPassw0rd}
+            password: ${{ secrets.GITHUB }}
             description: github username/password  
 
 tool:
